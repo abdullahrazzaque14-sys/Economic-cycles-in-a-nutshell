@@ -2,17 +2,15 @@
 A Macro framework for answering the question: “Where the hell are we in the economic cycle?” Tracks key metrics across four phases and translates them into market implications because apparently staring at 47 charts wasn't enough.
 
 
-# Economic-Cycle-Identification
-
-A practical framework for identifying where the US economy is in the business cycle — because apparently looking at one recession indicator and screaming "RECESSION" isn't a robust methodology.
 
 
-# Economic Cycle Identification
+# Economic Cycle Identification 
 
-> **A macro framework for answering the question: “Where the hell are we in the economic cycle?”**
+> **A macro framework for answering the question: “Where the hell are we in the economic cycle?”**       
 > Tracks key metrics across four phases and translates them into market implications because apparently staring at 47 charts wasn't enough.
 
 ---
+
 
 ##  What It Is
 
@@ -22,8 +20,10 @@ Instead of relying on a single indicator, the framework looks at the broader pic
 
 The cycle is divided into four broad regimes:
 
-**Early Cycle → Mid Cycle → Late Cycle → Recession**                                                                 
 ![Uploading image.png…]()
+
+**Early Cycle → Mid Cycle → Late Cycle → Recession**                                                                                                                       
+
 
 ---
 
