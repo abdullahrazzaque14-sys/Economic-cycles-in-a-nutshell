@@ -3,7 +3,6 @@ A Macro framework for answering the question: “Where the hell are we in the ec
 
 
 
-
 # Economic Cycle Identification 
 
 > **A macro framework for answering the question: “Where the hell are we in the economic cycle?”**       
