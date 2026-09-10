@@ -168,8 +168,7 @@ Potentially favors:
 * Gold
 * US Treasuries
 
-While cyclicals and higher-risk credit may begin to weaken.                         <img width="2243" height="1318" alt="image" src="https://github.com/user-attachments/assets/b72c41d6-fbd8-4a45-b1da-c68d6e5e2600" />
-
+While cyclicals and higher-risk credit may begin to weaken.
 
 ###  Recession
 
@@ -181,7 +180,8 @@ Typically characterized by:
 * Stronger demand for defensive assets
 * Aggressive monetary easing
 
-These are **regime-level tendencies, not guaranteed outcomes**.
+These are **regime-level tendencies, not guaranteed outcomes**.     ![Uploading image.png…]()
+
 
 ---
 
