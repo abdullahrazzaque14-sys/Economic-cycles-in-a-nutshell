@@ -180,7 +180,9 @@ Typically characterized by:
 * Stronger demand for defensive assets
 * Aggressive monetary easing
 
-These are **regime-level tendencies, not guaranteed outcomes**.                                                    ![Uploading image.png…]()
+These are **regime-level tendencies, not guaranteed outcomes**.                                                    
+
+<img width="2243" height="1318" alt="image" src="https://github.com/user-attachments/assets/0168f273-0766-4218-b720-c5df424f4f0c" />
 
 
 
