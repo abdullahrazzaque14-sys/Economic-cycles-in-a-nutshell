@@ -51,10 +51,10 @@ The framework divides the economic cycle into four phases:
 
 | Phase              | Environment | General Characteristics                                    |
 | ------------------ | ----------- | ---------------------------------------------------------- |
-| 🟢 **Early Cycle** | Recovery    | Growth recovering, policy easing, credit improving         |
-| 🔵 **Mid Cycle**   | Expansion   | Strong growth, healthy credit, broad risk appetite         |
-| 🟡 **Late Cycle**  | Slowdown    | Growth deteriorating, inflation sticky, policy restrictive |
-| 🔴 **Recession**   | Contraction | Growth falling, unemployment rising, aggressive easing     |
+|  **Early Cycle** | Recovery    | Growth recovering, policy easing, credit improving         |
+|  **Mid Cycle**   | Expansion   | Strong growth, healthy credit, broad risk appetite         |
+|  **Late Cycle**  | Slowdown    | Growth deteriorating, inflation sticky, policy restrictive |
+|  **Recession**   | Contraction | Growth falling, unemployment rising, aggressive easing     |
 
 ### The key idea
 
