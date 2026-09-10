@@ -22,11 +22,11 @@ Instead of relying on a single indicator, the framework looks at the broader pic
 
 The cycle is divided into four broad regimes:
 
-**Early Cycle → Mid Cycle → Late Cycle → Recession**
+**Early Cycle → Mid Cycle → Late Cycle → Recession**                                                          ![Uploading image.png…]()
 
 
 
-![Uploading image.png…]()
+
 
 
 ---
