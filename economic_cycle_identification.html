@@ -1,0 +1,213 @@
+
+<style>
+* { box-sizing: border-box; }
+.card { border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; margin-bottom: 12px; background: var(--color-background-primary); }
+.heading { font-size: 11px; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; color: var(--color-text-tertiary); margin: 0 0 10px; }
+.badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 2px 7px; border-radius: 4px; white-space: nowrap; }
+.bull  { background: var(--color-background-success); color: var(--color-text-success); }
+.bear  { background: var(--color-background-danger);  color: var(--color-text-danger); }
+.neu   { background: var(--color-background-secondary); color: var(--color-text-secondary); }
+.warn  { background: var(--color-background-warning); color: var(--color-text-warning); }
+.info  { background: var(--color-background-info); color: var(--color-text-info); }
+.phase { border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); padding: 12px 14px; margin-bottom: 10px; }
+.phase-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.phase-name { font-size: 14px; font-weight: 500; color: var(--color-text-primary); }
+.indicator-row { display: flex; justify-content: space-between; align-items: center; padding: 5px 0; border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 12px; gap: 8px; }
+.indicator-row:last-child { border-bottom: none; }
+.ind-name { color: var(--color-text-secondary); flex: 1; }
+.ind-val { color: var(--color-text-primary); font-weight: 500; min-width: 120px; text-align: right; }
+.asset-row { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; padding-top: 8px; border-top: 0.5px solid var(--color-border-tertiary); }
+.row { display: flex; justify-content: space-between; align-items: flex-start; padding: 8px 0; border-bottom: 0.5px solid var(--color-border-tertiary); gap: 10px; }
+.row:last-child { border-bottom: none; }
+.rl { flex: 1; font-size: 13px; color: var(--color-text-secondary); line-height: 1.5; }
+.rl strong { color: var(--color-text-primary); font-weight: 500; }
+.rr { display: flex; flex-direction: column; gap: 4px; align-items: flex-end; min-width: 100px; }
+.mono { font-family: var(--font-mono); font-size: 11px; background: var(--color-background-secondary); padding: 1px 5px; border-radius: 3px; color: var(--color-text-primary); }
+.scorecard { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 8px; }
+.sc-cell { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 8px 10px; }
+.sc-label { font-size: 11px; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 3px; }
+.sc-val { font-size: 12px; color: var(--color-text-primary); line-height: 1.5; }
+.step { display: flex; gap: 10px; padding: 8px 0; border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px; line-height: 1.5; color: var(--color-text-primary); }
+.step:last-child { border-bottom: none; }
+.sn { font-size: 11px; font-weight: 500; color: var(--color-text-tertiary); min-width: 18px; padding-top: 1px; }
+</style>
+
+<div style="padding:0.5rem 0 0.5rem">
+
+<div class="card">
+  <div class="heading">The four phases — what each looks like on the ground</div>
+
+  <div class="phase" style="border-color: var(--color-border-success)">
+    <div class="phase-header">
+      <span class="phase-name">Phase 1 — Early cycle (recovery)</span>
+      <span class="badge bull">Expansion begins</span>
+    </div>
+    <div class="indicator-row"><span class="ind-name">GDP growth</span><span class="ind-val">Turning positive / accelerating</span></div>
+    <div class="indicator-row"><span class="ind-name">Unemployment</span><span class="ind-val">High but peaking, starting to fall</span></div>
+    <div class="indicator-row"><span class="ind-name">Inflation</span><span class="ind-val">Low, below trend</span></div>
+    <div class="indicator-row"><span class="ind-name">Fed / central bank</span><span class="ind-val">Cutting or just cut — loose policy</span></div>
+    <div class="indicator-row"><span class="ind-name">Credit (HY spreads)</span><span class="ind-val">Wide but compressing fast</span></div>
+    <div class="indicator-row"><span class="ind-name">Yield curve (2s10s)</span><span class="ind-val">Steeply positive — bull steepening</span></div>
+    <div class="indicator-row"><span class="ind-name">PMI</span><span class="ind-val">Crossing above 50 from below</span></div>
+    <div class="indicator-row"><span class="ind-name">Consumer confidence</span><span class="ind-val">Depressed but improving</span></div>
+    <div class="asset-row">
+      <span class="badge bull">SPX strong</span>
+      <span class="badge bull">Cyclicals lead</span>
+      <span class="badge bull">HY bonds</span>
+      <span class="badge neu">Gold neutral</span>
+      <span class="badge bull">Small caps</span>
+    </div>
+  </div>
+
+  <div class="phase" style="border-color: var(--color-border-info)">
+    <div class="phase-header">
+      <span class="phase-name">Phase 2 — Mid cycle (expansion)</span>
+      <span class="badge info">Peak growth</span>
+    </div>
+    <div class="indicator-row"><span class="ind-name">GDP growth</span><span class="ind-val">Strong, above trend</span></div>
+    <div class="indicator-row"><span class="ind-name">Unemployment</span><span class="ind-val">Falling, approaching lows</span></div>
+    <div class="indicator-row"><span class="ind-name">Inflation</span><span class="ind-val">Rising, approaching target</span></div>
+    <div class="indicator-row"><span class="ind-name">Fed / central bank</span><span class="ind-val">Neutral to beginning to hike</span></div>
+    <div class="indicator-row"><span class="ind-name">Credit (HY spreads)</span><span class="ind-val">Tight and stable &lt;300 bps</span></div>
+    <div class="indicator-row"><span class="ind-name">Yield curve (2s10s)</span><span class="ind-val">Positive, beginning to flatten</span></div>
+    <div class="indicator-row"><span class="ind-name">PMI</span><span class="ind-val">Above 55 — elevated</span></div>
+    <div class="indicator-row"><span class="ind-name">Consumer confidence</span><span class="ind-val">High, near cycle peaks</span></div>
+    <div class="asset-row">
+      <span class="badge bull">SPX bullish</span>
+      <span class="badge bull">All sectors broad</span>
+      <span class="badge bear">Gold weak</span>
+      <span class="badge bull">Commodities bid</span>
+      <span class="badge neu">Bonds neutral</span>
+    </div>
+  </div>
+
+  <div class="phase" style="border-color: var(--color-border-warning)">
+    <div class="phase-header">
+      <span class="phase-name">Phase 3 — Late cycle (slowdown)</span>
+      <span class="badge warn">Deteriorating</span>
+    </div>
+    <div class="indicator-row"><span class="ind-name">GDP growth</span><span class="ind-val">Slowing, below trend</span></div>
+    <div class="indicator-row"><span class="ind-name">Unemployment</span><span class="ind-val">At lows — about to turn up</span></div>
+    <div class="indicator-row"><span class="ind-name">Inflation</span><span class="ind-val">Sticky / elevated — hard to kill</span></div>
+    <div class="indicator-row"><span class="ind-name">Fed / central bank</span><span class="ind-val">Hiking or paused at peak rates</span></div>
+    <div class="indicator-row"><span class="ind-name">Credit (HY spreads)</span><span class="ind-val">Beginning to widen — 300–500 bps</span></div>
+    <div class="indicator-row"><span class="ind-name">Yield curve (2s10s)</span><span class="ind-val">Flat or inverted</span></div>
+    <div class="indicator-row"><span class="ind-name">PMI</span><span class="ind-val">Falling from highs, approaching 50</span></div>
+    <div class="indicator-row"><span class="ind-name">Consumer confidence</span><span class="ind-val">Falling from peak</span></div>
+    <div class="asset-row">
+      <span class="badge warn">SPX volatile</span>
+      <span class="badge bull">Defensives outperform</span>
+      <span class="badge bull">Gold building</span>
+      <span class="badge bear">Cyclicals underperform</span>
+      <span class="badge bull">UST bid</span>
+    </div>
+  </div>
+
+  <div class="phase" style="border-color: var(--color-border-danger)">
+    <div class="phase-header">
+      <span class="phase-name">Phase 4 — Recession / contraction</span>
+      <span class="badge bear">Contraction</span>
+    </div>
+    <div class="indicator-row"><span class="ind-name">GDP growth</span><span class="ind-val">Negative — two consecutive quarters</span></div>
+    <div class="indicator-row"><span class="ind-name">Unemployment</span><span class="ind-val">Rising sharply</span></div>
+    <div class="indicator-row"><span class="ind-name">Inflation</span><span class="ind-val">Falling — demand destruction</span></div>
+    <div class="indicator-row"><span class="ind-name">Fed / central bank</span><span class="ind-val">Cutting aggressively</span></div>
+    <div class="indicator-row"><span class="ind-name">Credit (HY spreads)</span><span class="ind-val">Blowing out &gt;600–800 bps</span></div>
+    <div class="indicator-row"><span class="ind-name">Yield curve (2s10s)</span><span class="ind-val">Un-inverting / steeply positive again</span></div>
+    <div class="indicator-row"><span class="ind-name">PMI</span><span class="ind-val">Below 50, falling</span></div>
+    <div class="indicator-row"><span class="ind-name">Consumer confidence</span><span class="ind-val">Collapsing</span></div>
+    <div class="asset-row">
+      <span class="badge bear">SPX falling</span>
+      <span class="badge bull">Gold strong</span>
+      <span class="badge bull">UST rallies</span>
+      <span class="badge bear">HY bonds crushed</span>
+      <span class="badge bear">Commodities fall</span>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="heading">The indicator dashboard — track these weekly</div>
+  <div class="row">
+    <div class="rl"><strong>ISM Manufacturing PMI</strong> — above 50 = expansion, below = contraction. The direction of change matters as much as the level. Crosses above/below 50 are phase transition signals. <span class="mono">ismworld.org monthly</span></div>
+    <div class="rr"><span class="badge info">Leading</span></div>
+  </div>
+  <div class="row">
+    <div class="rl"><strong>ISM Services PMI</strong> — services is 70%+ of US economy. Services PMI diverging from manufacturing = important signal. Services falling below 50 = serious trouble. <span class="mono">ismworld.org monthly</span></div>
+    <div class="rr"><span class="badge info">Leading</span></div>
+  </div>
+  <div class="row">
+    <div class="rl"><strong>Unemployment rate + NFP</strong> — unemployment is a lagging indicator. It peaks AFTER recession starts. Don't wait for it to rise to call a recession — use leading indicators. Watch NFP trend, not single print. <span class="mono">BLS monthly</span></div>
+    <div class="rr"><span class="badge warn">Lagging</span></div>
+  </div>
+  <div class="row">
+    <div class="rl"><strong>Initial jobless claims</strong> — weekly. Much faster than monthly unemployment. Rising trend over 4 weeks = early labor deterioration signal. Most responsive employment indicator. <span class="mono">FRED: ICSA weekly</span></div>
+    <div class="rr"><span class="badge info">Leading</span></div>
+  </div>
+  <div class="row">
+    <div class="rl"><strong>Conference Board LEI (Leading Economic Index)</strong> — composite of 10 leading indicators. Three consecutive monthly declines = recession signal with high historical accuracy. <span class="mono">conference-board.org</span></div>
+    <div class="rr"><span class="badge info">Best composite</span></div>
+  </div>
+  <div class="row">
+    <div class="rl"><strong>Retail sales (real)</strong> — consumer spending is 68% of GDP. Month-over-month trend matters. Two consecutive negative months = demand deteriorating. <span class="mono">Census Bureau monthly</span></div>
+    <div class="rr"><span class="badge neu">Coincident</span></div>
+  </div>
+  <div class="row">
+    <div class="rl"><strong>Industrial production + capacity utilization</strong> — measures factory output. Late-cycle indicator. High utilization = inflationary pressure. Falling utilization = demand drop. <span class="mono">FRED: INDPRO</span></div>
+    <div class="rr"><span class="badge neu">Coincident</span></div>
+  </div>
+  <div class="row">
+    <div class="rl"><strong>Housing starts + permits</strong> — housing leads the cycle by 6–12 months. It dies first and recovers first. Permits are the leading version — they collapse before starts do. <span class="mono">Census Bureau monthly</span></div>
+    <div class="rr"><span class="badge info">Leading</span></div>
+  </div>
+  <div class="row">
+    <div class="rl"><strong>Credit card delinquencies + auto loan defaults</strong> — early warning for consumer stress before it shows in unemployment. Rising delinquencies = Phase 3 → 4 transition approaching. <span class="mono">NY Fed quarterly</span></div>
+    <div class="rr"><span class="badge info">Leading</span></div>
+  </div>
+  <div class="row">
+    <div class="rl"><strong>Corporate earnings revisions</strong> — when analysts revise EPS estimates down across sectors broadly, it's a cycle signal. Negative revisions accelerating = late cycle or recession entry. <span class="mono">FactSet weekly</span></div>
+    <div class="rr"><span class="badge info">Leading</span></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="heading">The cycle scorecard — how to read where you are right now</div>
+  <div class="scorecard">
+    <div class="sc-cell">
+      <div class="sc-label">PMI direction</div>
+      <div class="sc-val">Rising from &lt;50 = early<br>Above 55 = mid<br>Falling from high = late<br>Below 50 falling = recession</div>
+    </div>
+    <div class="sc-cell">
+      <div class="sc-label">Yield curve shape</div>
+      <div class="sc-val">Steep positive = early/mid<br>Flattening = mid/late<br>Inverted = late<br>Un-inverting = recession</div>
+    </div>
+    <div class="sc-cell">
+      <div class="sc-label">HY spread level</div>
+      <div class="sc-val">&lt;300 compressing = mid<br>300–500 rising = late<br>&gt;500 widening = recession<br>Wide + compressing = early</div>
+    </div>
+    <div class="sc-cell">
+      <div class="sc-label">Fed policy stance</div>
+      <div class="sc-val">Cutting / just cut = early<br>Neutral = mid<br>Hiking = late<br>Emergency cuts = recession</div>
+    </div>
+    <div class="sc-cell">
+      <div class="sc-label">Unemployment trend</div>
+      <div class="sc-val">High + falling = early<br>Low + stable = mid<br>At lows, claims rising = late<br>Rising fast = recession</div>
+    </div>
+    <div class="sc-cell">
+      <div class="sc-label">Inflation trend</div>
+      <div class="sc-val">Low + rising slowly = early<br>At target + rising = mid<br>Above target + sticky = late<br>Falling on demand = recession</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="heading">How to use this to trade SPX and gold right now</div>
+  <div class="step"><span class="sn">1</span><span>Score each indicator above as early / mid / late / recession. Whichever phase gets the most votes = your current regime. Majority rules — don't need unanimity.</span></div>
+  <div class="step"><span class="sn">2</span><span>The phase tells you your directional bias for weeks to months. It does not give you intraday signals — it tells you which direction to lean on every trade until the next indicator update.</span></div>
+  <div class="step"><span class="sn">3</span><span>Transitions matter more than the phase itself. When 3+ indicators flip simultaneously from one phase to the next — that is your biggest trade signal. Phase transitions = regime changes = the fat-pitch setups.</span></div>
+  <div class="step"><span class="sn">4</span><span>For SPX: mid cycle = long bias all year. Late cycle = reduce, rotate to defensives. Recession = short or flat. Early = aggressive long, buy the laggards.</span></div>
+  <div class="step"><span class="sn">5</span><span>For gold: late cycle = accumulate. Recession entry = full long. Mid cycle with falling real yields = still hold. Early cycle = reduce as risk-on resumes and HY spreads compress.</span></div>
+  <div class="step"><span class="sn">6</span><span>The trickiest phase is the transition from late to recession — everything looks bad for SPX but gold hasn't moved yet. That lag is your entry window for gold before the real move starts.</span></div>
+</div>
+
+</div>
